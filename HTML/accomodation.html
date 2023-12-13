@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styling_accomodation.css">
+    <title>Casa Pescarului "La Maxea"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Familjen+Grotesk&family=Koulen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="page_header">
+        <div id = "header_logo">
+            <a href = "index.html"><img src="../images/logo.svg" alt="logo" ></a>
+        </div>
+
+        <div id = "header_menu">
+            <a href = "../PHP/login_form.php"><img id="accimg" src="../images/user.png" alt="account" ></a>
+            <img src="../images/menu.png" id="menuimg" alt="menu" onclick = "dropdownFunction()">
+            <div id = "dropdown_content">
+                <a href = "index.html">HOME</a>
+                <a href = "accomodation.html">ACCOMODATION</a>
+                <a href = "experiences.html">EXPERIENCES</a>
+                <a href = "info.html">USEFUL INFO</a>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href = "index.html">HOME</a></li>
+                <li><a href = "accomodation.html">ACCOMODATION</a></li>
+                <li><a href = "experiences.html">EXPERIENCES</a></li>
+                <li><a href = "info.html">USEFUL INFO</a></li>
+                <li><a href = "../PHP/login_form.php">ACCOUNT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id = "double_room" class = "description">
+        <h1>DOUBLE ROOM</h1>
+        <div class = "description_text">
+        <p>A room featuring a private bathroom, a TV and destined for two people.
+        </p>
+    </div>
+    <div class = "values">
+        <p>Price: <span class="superscript">250RON</span></p>
+        <p>Breakfast: <span class="superscript">INCLUDED</span></p>
+        </div>
+    </section>
+    <section class = "accomodation_images">
+        <img src = "../images/dr1.jpg" alt = "Double room 1">
+        <img src = "../images/dr2.jpg" alt = "Double room 2">
+    </section>
+
+    <section id = "triple_room" class = "description">
+        <h1>TRIPLE ROOM</h1>
+        <div class = "description_text">
+        <p>A room with a private bathroom, a TV and destined for three people.
+        </p>
+        </div>
+        <div class = "values">
+        <p>Price: <span class="superscript">350RON</span></p>
+        <p>Breakfast: <span class="superscript">INCLUDED</span></p>
+        </div>
+    </section>
+    <section class = "accomodation_images">
+        <img src = "../images/tr1.jpg" alt = "Triple room 1">
+        <img src = "../images/tr2.jpg" alt = "Triple room 2">
+        <img src = "../images/tr3.jpg" alt = "Triple room 3">
+    </section>
+
+    <section id = "ship_room" class = "description">
+        <h1>SHIP</h1>
+        <div class = "description_text">
+        <p>If you wish to know how it feels to be a pirate, we come forth with the possibility
+            of sleeping on a ship, featuring a bathroom and with a capacity of 4 people. It is located
+            at the docks, approximately half a kilometer away from the main complex.
+        </p>
+        </div>
+        <div class = "values">
+            <p>Price: <span class="superscript">500RON</span></p>
+            <p>Breakfast: <span class="falsesuperscript">NOT INCLUDED</span></p>
+            </div>
+    </section>
+    <section class = "accomodation_images">
+        <img src = "../images/ship1.jpg" alt = "Ship 1">
+        <img src = "../images/ship2.jpg" alt = "Ship 2">
+        <img src = "../images/ship3.jpg" alt = "Ship 3">
+        <img src = "../images/ship4.jpg" alt = "Ship 4">
+    </section>
+</div>
+
+    <footer>
+        <p>© 2022 Munteanu-Bardan Raul Octav. All rights reserved.</p>
+        <div id = "footer_container">
+        <ul>
+            <li>Contact: +40 760 066 117</li>
+            <li>Location: <a href = "https://goo.gl/maps/WkqojJEGbc7PGVuV8" target="_blank">Maps</a></li>
+        </ul>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100063571990439" target="_blank">
+                <img alt = "facebook" src = "../images/facebook.png">
+            </a>
+        </div>
+        </div>
+
+    </footer>
+    <script src = "../JS/scripts.js"></script>
+</body>
+</html>

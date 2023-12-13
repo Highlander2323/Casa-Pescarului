@@ -1,0 +1,295 @@
+/*general*/
+body{
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+#dropdown_content{
+    display: none;
+}
+
+p, li{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2{
+    font-family: 'Koulen', cursive;
+}
+
+#main_page{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+section{
+    padding: 10px;
+    width:100%;
+    display: block;
+}
+
+ul {
+    list-style:none;
+}
+
+li a{
+    text-decoration: none;
+    color:aliceblue;
+    text-align:center;
+    display:inline-block;
+    transition: 0.7s;
+    padding: 15px;
+}
+
+nav{
+    display:block;
+    margin-right:2.5em;
+}
+
+#services img{
+    height:75px;
+}
+
+#header_menu img{
+    height: 50px;
+}
+
+#accimg {
+    margin-right: 20px;
+}
+
+/* nav menu */
+#page_header{
+    position: fixed;
+    top:0;
+    overflow: hidden;
+    width:100%;
+    box-shadow: 0 10px 10px -10px black;
+    background-color: rgb(28, 139, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header_logo{
+    margin: 10px 0 0 15px;
+}
+#header_menu{
+    display: none;
+}
+
+#page_header nav{
+    display: inline-block;
+}
+
+#page_header li{
+    height:100%;
+    display:inline-block;
+    text-align:center;
+}
+#page_header li a:hover{
+    background-color:white;
+    color:#1a1813;
+}
+
+/* main page */
+#front_title{
+    display: flex;
+    flex-wrap: wrap;
+    height: 45vw;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/pelicans.jpg");
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 4vw;
+    color:black;
+    padding-top:10%;
+}
+
+.description_text{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+
+.description_text p{
+    width: 50%;
+    font-size: max(1.5vw, 25px);
+    margin: 20px;
+}
+
+.experience{
+    background-color: rgb(28, 139, 235);
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.experience_images{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.experience_images img{
+    width: 700px;
+    height: 500px;
+    border: solid 2px black;
+    margin: 10px;
+    -webkit-transition: background .5s ease-out;
+  -moz-transition: background .5s ease-out;
+  -o-transition: background .5s ease-out;
+  transition: background .5s ease-out;
+}
+
+
+
+.description{
+    background-color: rgb(28, 139, 235);
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.description h1{
+    font-size: 3.5vw;
+}
+
+.description_text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description_text p{
+    width: 50%;
+    font-size: max(1.5vw, 16px);
+    margin: 20px;
+}
+
+#services{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#services article{
+    width: 333px;
+    height: 350px;
+    padding: 10px;
+    border: solid 2px black;
+    margin: 10px;
+    -webkit-transition: background .5s ease-out;
+  -moz-transition: background .5s ease-out;
+  -o-transition: background .5s ease-out;
+  transition: background .5s ease-out;
+}
+
+#services h2{
+    font-size: 2em;
+}
+
+#services p{
+    font-size: 1.25em;
+}
+
+#services article:hover{
+    background-color: rgba(28, 139, 235);
+}
+
+#services article header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* footer */
+footer{
+    background-color: rgb(28, 139, 235);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:200px;
+    padding-bottom:20px;
+}
+
+footer p{ 
+    margin: 20px;
+    width: 50%;
+}
+
+footer ul{
+    margin: 20px;
+    width: auto;
+}
+
+footer img{
+    height: 75px;
+}
+
+#footer_container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+
+
+/* mobile responsiveness */
+@media only screen and (max-width: 768px) {
+
+    body{
+        width:100%;
+    }
+    #page_header nav{
+        display: none;
+    }
+
+    #front_title{
+        font-size: 2.5vh;
+    }
+
+    .description h1{
+        font-size: 3vh;
+    }
+
+    footer p{
+        width:30%;
+    }
+
+    footer ul{
+        width: 70%;
+    }
+
+    #header_menu{
+        display: block;
+        margin-right: 5%;
+        padding-left: 15%;
+        position: relative;
+    }
+
+    #dropdown_content{
+        display:none;
+        position:fixed;
+        right:0;
+        background-color: rgba(28, 139, 235);
+        box-shadow: 0 2px 5px 1px black;
+    }
+
+    #dropdown_content a{
+        text-decoration: none;
+        display:block;
+        padding: 30px 30px;
+        border: solid 1px black;
+        text-align: center;
+        color:aliceblue;
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,256 @@
+/*general*/
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+p,
+li {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Koulen', cursive;
+}
+
+#main_page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section {
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    display: inline-block;
+    transition: 0.7s;
+    padding: 15px;
+}
+
+nav {
+    display: block;
+    margin-right: 2.5em;
+}
+
+#header_menu img {
+    height: 50px;
+}
+
+#services img {
+    height: 75px;
+}
+
+#accimg {
+    margin-right: 20px;
+}
+
+/* nav menu */
+#page_header {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 10px 10px -10px black;
+    background-color: rgb(28, 139, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header_logo {
+    margin: 10px 0 0 15px;
+}
+
+#header_menu {
+    display: none;
+}
+
+#page_header nav {
+    display: inline-block;
+}
+
+#page_header li {
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+#page_header li a:hover {
+    background-color: white;
+    color: #1a1813;
+}
+
+/* main page */
+
+#user {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+.details {
+    background-color: rgb(28, 139, 235);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.details p {
+    font-size: max(2.5rem, 3.5vh);
+}
+
+#logout {
+    width: 100%;
+    font-size: 3vh;
+    display: block;
+}
+
+#logout a{
+    text-decoration: none;
+    color:red;
+}
+#reservation{
+    text-align: center;
+}
+
+#reservation li a {
+    width: 200px;
+    display: block;
+    margin: 10px;
+    font-size: 3vh;
+}
+
+
+#reservation li a:hover {
+    background-color: white;
+    color: #1a1813;
+}
+
+
+#myreservation_article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+#myreservation_article p {
+    font-size: max(1rem, 2vh);
+}
+
+#myreservation_article h1 {
+    font-size: 3rem;
+}
+
+/* footer */
+footer {
+    background-color: rgb(28, 139, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    margin: 20px;
+    width: 50%;
+}
+
+footer ul {
+    margin: 20px;
+    width: auto;
+}
+
+footer img {
+    height: 75px;
+}
+
+#footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+
+
+/* mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    #page_header nav {
+        display: none;
+    }
+
+    #user {
+        padding-top: 30%;
+    }
+
+    .details h1 {
+        font-size: 7vh;
+    }
+
+    footer p {
+        width: 30%;
+    }
+
+    footer ul {
+        width: 70%;
+    }
+
+    #header_menu {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    #header_menu {
+        display: block;
+        margin-right: 5%;
+        padding-left: 15%;
+        position: relative;
+    }
+
+    #dropdown_content {
+        display: none;
+        position: fixed;
+        right: 0;
+        background-color: rgba(28, 139, 235);
+        box-shadow: 0 2px 5px 1px black;
+    }
+
+    #dropdown_content a {
+        text-decoration: none;
+        display: block;
+        padding: 30px 30px;
+        border: solid 1px black;
+        text-align: center;
+        color: aliceblue;
+        font-size: 1.5rem;
+    }
+}
